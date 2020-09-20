@@ -15,7 +15,20 @@
 </head>
 <body>
     <div id="app">
-        <index></index>
+
+        {{-- Vue Component Insert Here Start --}}
+            {{-- <app-header></app-header> --}}
+        {{-- Vue Component Insert Here End --}}
+
+        {{-- Vue Router View Start --}}
+            <router-view></router-view>
+        {{-- Vue Router View End--}}
+
+
+        {{-- Vue Component Insert Here Start --}}
+            {{-- <app-footer></app-footer> --}}
+        {{-- Vue Component Insert Here End --}}
+
     </div>
     <!-- Scripts -->
     @include('frontend.panel.scripts')
