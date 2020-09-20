@@ -15,11 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[FrontendController::class, 'index'])->name('home');
-Route::get('/job-list',[FrontendController::class, 'joblist'])->name('joblist');
+// Route::get('/',[FrontendController::class, 'index'])->name('home');
+// Route::get('/job-list',[FrontendController::class, 'joblist'])->name('joblist');
 
-Auth::routes();
+// Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::get('/{vue_capture?}', function () {
+    return view('layouts.app');
+})->where('vue_capture', '[\/\w\.-]*');

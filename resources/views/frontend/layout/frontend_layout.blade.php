@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     {{-- Include frontend Header Start --}}
     @include('frontend.panel.header')
     {{-- Include frontend Header End --}}
